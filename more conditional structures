@@ -1,0 +1,114 @@
+#example1
+x = 34
+if x < 2:
+  print('small)
+elif x < 10:
+  print('medium')
+else:
+  print('LARGE')
+print('All done')
+
+#example2
+x = 564
+if x < 2:
+  print('below 2')
+elif x >= 2:
+  print('two or more')
+else:
+    print('something else')
+
+#example3
+astr = 'Hello Bob'
+try:
+  istr = int(astr)
+except:
+  istr = -1
+
+print('First', istr)
+
+astr = '456'
+try:
+  istr = int(astr)
+except:
+  istr = -1
+
+print('Second', istr)
+
+#example4
+rawstr = input('Enter a number: ')
+try:
+  ival = int(rawstr)
+except:
+  ival = -1
+
+if ival > 0:
+  print('Nice work')
+else:
+  print('Not a number')
+
+#py4e ex3.1
+hours = input("Enter Hours: ")
+h = float(hours)
+rate = input("Enter Rate: ")
+r = float(rate)
+base_pay = h*r
+ot = (40*r) + ((h-40)*1.5*r)
+
+
+if h > 40:
+  print ('Pay:', ot)
+else:
+  print('Pay: ', base_pay)
+
+#py4e ex3.1 alternative
+sh = input('Enter Hours: ')
+sr = input('Enter Rate: ')
+fh = float(sh)
+fr = float(sr)
+reg = fh*fr
+
+if fh > 40:
+  otp = (fh-40) * (fr*0.5)
+  xp = reg + otp
+else:
+  xp = reg
+print('Pay:', xp)
+
+#py4e ex3.1 alternative 2
+sh = input('Enter Hours: ')
+sr = input('Enter Rate: ')
+
+
+try:
+  fh = float(sh)
+  fr = float(sr)
+except:
+  print("Error, enter Numerical Input")
+  quit()
+
+if fh > 40:
+  otp = (fh-40) * (fr*0.5)
+  reg = fh*fr
+  xp = reg + otp
+else:
+  reg = fh*fr
+  xp = reg
+print('Pay:', xp)
+
+#py4e
+score = input("Enter Score: ")
+fs = float(score)
+
+if fs > 0.0 and fs < 1.0:
+  if fs >= 0.9:
+    print('A')
+  elif fs >= 0.8:
+    print('B')
+  elif fs >= 0.7:
+    print('C')
+  elif fs >= 0.6:
+    print('D')
+  elif fs < 0.6:
+    print('F')
+else:
+  print('Bad Score')
