@@ -1,0 +1,7 @@
+name = input('Enter your name: ')
+print('Hello', name)
+
+h = input("Enter Hours: ")
+r = input("Enter Rate: ")
+salaire = float(h)*float(r)
+print('Pay: ', salaire)
