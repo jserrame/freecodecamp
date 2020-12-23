@@ -1,0 +1,42 @@
+#lec example
+def computepay(hours, rate):
+  #print("In computepay", hours, rate)
+  if hours > 40:
+    reg = hours * rate
+    otp = (hours - 40) * (rate*0.5)
+    pay = reg + otp
+  else:
+    pay = hours * rate
+  return pay
+
+sh = input('Enter Hours: ')
+sr = input('Enter Rate: ')
+fh = float(sh)
+fr = float(sr)
+
+xp = computepay(fh, fr)
+
+print('Pay:', xp)
+
+#chap 4 exercise7
+def computegrade(score):
+  if fs > 0.0 and fs < 1.0:
+    if fs >= 0.9:
+      g = 'A'
+    elif fs >= 0.8:
+      g = 'B'
+    elif fs >= 0.7:
+      g = 'C'
+    elif fs >= 0.6:
+      g = 'D'
+    elif fs < 0.6:
+      g = 'F'
+  else:
+    g = 'Bad score'
+  return g
+
+score = input("Enter Score: ")
+fs = float(score)
+
+lgrade = computegrade(fs)
+print('Your grade is:', lgrade)
