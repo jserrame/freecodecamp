@@ -1,0 +1,29 @@
+x = 5
+print('Before 5')
+if x == 5:
+  print('Is 5')
+  print('Is still 5')
+  print('Third 5')
+print('Afterwards 5')
+print('Before 6')
+if x == 6:
+    print('Is 6')
+    print('Is still 6')
+    print('Third 6')
+print('Afterwards 6')
+
+
+x = 123
+if x > 1:
+  print("More than one")
+  if x < 100: 
+    print("Less than 100")
+print("All done")
+
+
+x = 0.45
+if x > 2:
+  print("Bigger")
+else:
+  print("smaller")
+print('All done.')
